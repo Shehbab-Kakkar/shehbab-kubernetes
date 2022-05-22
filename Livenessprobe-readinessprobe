@@ -9,3 +9,16 @@ ReadinessProbe
 
 Determines if a Pod should receive requests
 Kubelet uses a readinessProbe to know when it should start accepting traffic
+
+
+~~~~~~~~~~~~
+livenessProbe or readinessProbe in the deployment.yaml manifest
+
+livenessProbe:
+httpGet:
+ scheme: HTTP
+ path: /index.html
+ port:   80
+initialDelaySeconds:  5
+periodSeconds: 5
+
