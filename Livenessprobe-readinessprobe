@@ -1,0 +1,11 @@
+LivenessProbe
+
+Determine if a Pod is healthy
+Determine if a POd is running as expected
+Kubelet uses livenessProbe to know when to start a container
+(if it's unhealthy inside of a Pod)
+
+ReadinessProbe
+
+Determines if a Pod should receive requests
+Kubelet uses a readinessProbe to know when it should start accepting traffic
